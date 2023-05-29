@@ -52,7 +52,7 @@ const Testimonials = () => {
         designs for web and mobile applications.
       </p>
 
-      <div className="flex flex-col h-full lg:h-[400px] lg:flex-row items-center gap-3 lg:gap-0 justify-center md:justify-around lg:justify-center overflow-hidden py-3 lg:p-2 ">
+      <div className="flex flex-col h-full lg:h-[400px] lg:flex-row items-center gap-3 lg:gap-0 justify-around md:justify-around lg:justify-center overflow-hidden py-3 lg:p-2 ">
         {testimonialsData.map((item, index) => (
           <div
             key={index}
@@ -62,7 +62,7 @@ const Testimonials = () => {
                 : "bg-secondaryColor hover:border-2 w-[290px] h-[170px] md:w-[450px] md:h-56 lg:w-[400px] lg:h-80 rounded-xl mx-3 flex items-center justify-around flex-col lg:px-3 lg:py-3 shadow-md ease-in duration-300  hover:scale-110"
             }
           >
-            <div className="top flex items-center justify-center gap-5">
+            <div className="top flex items-center justify-center gap-5 overflow-hidden">
               <TurnRight className="left text-red-400 text-xs" />
               <img
                 className="w-10 h-10 md:w-16 md:h-16 lg:w-16 lg:h-16 object-cover rounded-full"
@@ -71,14 +71,14 @@ const Testimonials = () => {
               />
               <TurnLeft className="right text-red-400" />
             </div>
-            <div className="bg-secondaryColor text-textWhite p-3 text-center text-[10px] md:text-sm lg:text-sm font-montserrat font-normal">
+            <div className="bg-secondaryColor text-textWhite p-3 text-center text-[10px] md:text-sm lg:text-sm font-montserrat font-normal overflow-hidden">
               {item.desc}
             </div>
             <div className="text-textWhite text-xs flex flex-col items-center justify-center">
-              <h3 className="font-montserrat text-sm font-semibold">
+              <h3 className="font-montserrat text-sm font-semibold overflow-hidden">
                 {item.name}
               </h3>
-              <h4 className="font-montserrat text-xs font-normal md:text-base ">
+              <h4 className="font-montserrat text-xs font-normal md:text-base overflow-hidden">
                 {item.title}
               </h4>
             </div>

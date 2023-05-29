@@ -85,7 +85,7 @@ const Portfolio: React.FC = () => {
               <img
                 src={d.img}
                 alt=""
-                className="w-full h-full object-cover z-10 hover:opacity-[0.2]"
+                className="w-full h-full object-cover z-10 hover:opacity-[0.2] rounded-lg"
               />
               <h3 className="absolute font-montserrat font-normal text-base lg:text-2xl text-textWhite ">
                 {d.title}
