@@ -1,24 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Navbar from "./components/Navbar";
+import Menu from "./components/Menu";
+import About from "./components/About";
+import Services from "./components/Services";
+import Portfolio from "./components/Portfolio";
+import Testimonials from "./components/Testimonials";
+import Contact from "./components/Contact";
+import "./app.css";
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="h-screen ">
+      <Navbar
+        menuOpen={menuOpen}
+        setMenuOpen={setMenuOpen}
+        toggleMenu={toggleMenu}
+      />
+      {menuOpen && <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />}
+
+      <div className="sections">
+        <About />
+        <Services />
+        <Portfolio />
+        <Testimonials />
+        <Contact />
+      </div>
     </div>
   );
 }
