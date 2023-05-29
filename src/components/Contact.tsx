@@ -7,8 +7,8 @@ const Contact: React.FC<ContactProps> = () => {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
-  const [submitted, setSubmitted] = useState<boolean>(false);
-  const [error, setError] = useState<Error | null>(null);
+  // const [submitted, setSubmitted] = useState<boolean>(false);
+  // const [error, setError] = useState<Error | null>(null);
 
   useEffect(() => {
     const year: number = new Date().getFullYear();
