@@ -60,7 +60,7 @@ const Portfolio: React.FC = () => {
 
       <div className="flex flex-col gap-3 mt-5 md:mt-5 lg:mt-5">
         <div className=" flex items-center justify-center  ">
-          <ul className=" flex gap-3 md:gap-7 lg:gap-7  text-textWhite text-xs md:text-lg lg:text-base font-montserrat font-normal cursor-pointer ">
+          <ul className=" flex gap-3 md:gap-7 lg:gap-7   text-textWhite text-xs md:text-lg lg:text-base font-montserrat font-normal cursor-pointer ">
             {list.map((item) => (
               <PortfolioList
                 key={item.id}
@@ -73,7 +73,7 @@ const Portfolio: React.FC = () => {
           </ul>
         </div>
 
-        <div className="w-full h-auto gap-3 md:gap-7 lg:gap-5 flex flex-wrap justify-center md:justify-between mt-3 md:mt-12 lg:mt-0 lg:justify-between ">
+        <div className="w-full h-auto gap-3 md:gap-7 lg:gap-5 flex flex-wrap justify-center md:justify-between mt-3 md:mt-12 lg:mt-0 lg:justify-between rounded-lg">
           {data.map((d, index) => (
             <a
               href={d?.link}
@@ -87,7 +87,7 @@ const Portfolio: React.FC = () => {
                 alt=""
                 className="w-full h-full object-cover z-10 hover:opacity-[0.2]"
               />
-              <h3 className="absolute font-montserrat font-normal text-2xl text-textWhite ">
+              <h3 className="absolute font-montserrat font-normal text-base lg:text-2xl text-textWhite ">
                 {d.title}
               </h3>
             </a>
