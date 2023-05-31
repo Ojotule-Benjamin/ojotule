@@ -15,7 +15,7 @@ const About = () => {
             options={{
               strings: [
                 "I’m Ojotule Benjamin",
-                "Front-End Engineer",
+                "Software Engineer",
                 "Mobile Developer",
                 "Technical Writer",
               ],
@@ -28,19 +28,24 @@ const About = () => {
             }}
           />
           <div className="flex gap-3 lg:gap-2 text-white font-montserrat font-normal text-xs md:text-xl lg:text-base">
-            <h4>Web Developer</h4>
+            <h4>Software Engineer</h4>
             <span>|</span>
             <h4>Mobile Developer</h4>
             <span>|</span>
-            <h4>UX Researcher</h4>
+            <h4>Technical Writer</h4>
           </div>
           <p className="text-textColor font-montserrat font-normal text-xs md:text-base lg:text-base text-justify">
-            Hi! My name is Ojochoko Mary. A self taught product designer based
-            in Abuja, Nigeria. Fun fact about me I have a background in food
-            science and technology, which gives me a strong research foundation.
-            I became interested in design because it made me happy to understand
-            people's aspirations and desires, as well as to assist them in
-            resolving issues and improving their quality of life.
+            Hello there! I'm not your average software engineer—I'm a
+            code-whisperer, a bug-buster, and a problem-solving guru. Armed with
+            my keyboard and a cup of coffee that rivals the world's greatest
+            inventions, I dive headfirst into the realm of ones and zeros,
+            crafting elegant solutions to digital conundrums. With a dash of
+            creativity, a sprinkle of innovation, and a pinch of
+            caffeine-induced brilliance, I strive to turn complex ideas into
+            functional reality. So, fasten your seatbelt and get ready to embark
+            on a coding adventure like no other, where bugs fear me, algorithms
+            bow to my logic, and lines of code dance to my command. Welcome to
+            the realm of my digital wizardry! 😊
           </p>
 
           <a
