@@ -53,7 +53,7 @@ const Testimonials = () => {
         designs for web and mobile applications.
       </p>
 
-      <div className="flex flex-col h-full bg-red-700 lg:h-[400px] lg:flex-row items-center justify-around lg:justify-center overflow-hidden py-0 lg:py-5">
+      <div className="flex flex-col h-full lg:h-[400px] lg:flex-row items-center justify-around lg:justify-center overflow-hidden py-0 lg:py-5">
         {testimonialsData.map((item, index) => (
           <div
             key={index}
