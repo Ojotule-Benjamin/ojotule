@@ -1,6 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import david from "../../src/assets/david.png";
+import atule from "../../src/assets/atule.jpg";
 
 const About = () => {
   return (
@@ -53,7 +53,7 @@ const About = () => {
 
         <div className="right  flex-[0.5] flex items-center justify-center md:py-20 md:overflow-hidden lg:py-0 ">
           <img
-            src={david}
+            src={atule}
             alt=""
             className="w-[250px] h-[250px] md:w-[500px] md:h-[500px] lg:w-[500px] lg:h-[500px] rounded-full  object-cover border-4 border-red-400"
           />
