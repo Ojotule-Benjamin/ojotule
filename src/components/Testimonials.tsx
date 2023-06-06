@@ -14,25 +14,26 @@ const Testimonials = () => {
   const testimonialsData: TestimonialsDataProps[] = [
     {
       id: 1,
-      name: "Onogu Ojonugwa Martins",
-      title: "Senior Developer",
-      img: "https://avatars.githubusercontent.com/u/18556742?v=4",
+
+      name: "Sarah Daniel",
+      title: "Product Designer",
+      img: require("../assets/sarahDaniels.png"),
       desc: "Ojotule built my business website and since then I have gotten more online presence. I can easily send people a link to my website to get full details about my business, and pictures of my products. Smooth and beautiful website.",
     },
     {
       id: 2,
-      name: "Ojochoko Mary Ochuma",
+      name: "John Opaluwa",
       title: "Product Designer",
-      img: "https://avatars.githubusercontent.com/u/18556742?v=4",
+      img: require("../assets/john.jpeg"),
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
       featured: true,
     },
     {
       id: 3,
-      name: "John Opaluwa",
-      title: "CEO of Regenate",
-      img: "https://avatars.githubusercontent.com/u/18556742?v=4",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+      name: "Ojochoko Mary Ochuma",
+      title: "CEO of Dsarah Daniels",
+      img: require("../assets/ojochoko.jpeg"),
+      desc: "Working with Ojotule is incredibly efficient and seamless",
     },
   ];
   return (
@@ -47,10 +48,10 @@ const Testimonials = () => {
           Clients
         </span>
       </h1>
-      {/* <p className="w-full lg:w-[500px] text-textColor font-montserrat font-normal text-xs md:text-sm lg:text-base text-justify overflow-hidden">
+      <p className="w-full hidden md:flex lg:flex  lg:w-[500px] text-textColor font-montserrat font-normal text-xs md:text-sm lg:text-base text-justify overflow-hidden">
         As a UI/UX designer, I specialize in creating intuitive, user-centered
         designs for web and mobile applications.
-      </p> */}
+      </p>
 
       <div className="flex flex-col h-full lg:h-[400px] lg:flex-row items-center justify-around lg:justify-center overflow-hidden py-0 lg:py-5">
         {testimonialsData.map((item, index) => (
