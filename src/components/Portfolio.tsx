@@ -40,7 +40,7 @@ const Portfolio: React.FC = () => {
 
   return (
     <div
-      className="bg-secondaryColorBg flex flex-col justify-around gap-5 md:gap-5 lg:gap-7 px-3 md:px-11 lg:px-8"
+      className="bg-secondaryColorBg flex flex-col justify-between pb-5 px-3 md:px-11 lg:px-8"
       id="portfolio"
       style={{ height: "calc(100vh - 80px)" }}
     >

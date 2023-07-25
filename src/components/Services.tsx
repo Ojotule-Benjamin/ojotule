@@ -43,7 +43,7 @@ const Services: React.FC = () => {
 
   return (
     <div
-      className="bg-secondaryColorBg flex justify-around flex-col gap-0 lg:gap-5 px-3 md:px-11 lg:px-8"
+      className="bg-secondaryColorBg flex justify-between pb-5 flex-col px-3 md:px-11 lg:px-8"
       id="services"
       style={{ height: "calc(100vh - 80px)" }}
     >
@@ -58,7 +58,7 @@ const Services: React.FC = () => {
         </p>
       </div>
 
-      <div className="flex  items-center justify-around lg:items-center lg:justify-center flex-wrap gap-3  lg:gap-7">
+      <div className="flex  items-center justify-around lg:items-center lg:justify-center flex-wrap gap-3 lg:gap-7">
         {serviceData.map((item, index) => {
           const isMobile = window.innerWidth <= 640;
           if (isMobile && index > 2) {
