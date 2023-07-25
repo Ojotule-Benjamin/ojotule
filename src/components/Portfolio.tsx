@@ -40,27 +40,28 @@ const Portfolio: React.FC = () => {
 
   return (
     <div
-      className="bg-secondaryColorBg flex flex-col  gap-5 md:gap-5 lg:gap-7 px-3 md:px-11 lg:px-24"
+      className="bg-secondaryColorBg flex flex-col justify-around gap-5 md:gap-5 lg:gap-7 px-3 md:px-11 lg:px-8"
       id="portfolio"
       style={{ height: "calc(100vh - 80px)" }}
     >
-      <h1 className="flex font-montserrat font-bold lg:pb-4 text-textWhite text-xl md:text-3xl lg:text-4xl">
-        Check Out My
-        <span className="text-primaryColor pl-2 font-montserrat font-bold text-xl md:text-3xl lg:text-4xl ">
-          Portfolio
-        </span>
-      </h1>
-      {/* <p className="text-textWhite w-[500px] font-montserrat font-normal text-base text-justify">
-        As a Software Engineer, I specialize in creating intuitive,
-        user-centered designs for web and mobile applications. I have a strong
-        understanding of design principles and a keen eye for aesthetics, and I
-        am skilled at using a variety of design tools and software to create
-        wireframes.
-      </p> */}
+      <div className="border border-red-700">
+        <h1 className="flex font-montserrat font-semibold text-textWhite text-lg lg:text-3xl ">
+          {" "}
+          Check Out My{" "}
+          <span className=" pl-2 text-primaryColor">Portfolio</span>
+        </h1>
+        {/* <p className="w-full lg:w-1/2 text-textColor font-montserrat font-normal text-sm md:text-base lg:text-base text-justify">
+          As a Software Engineer, I specialize in creating intuitive,
+          user-centered designs for web and mobile applications. I have a strong
+          understanding of design principles and a keen eye for aesthetics, and
+          I am skilled at using a variety of design tools and software to create
+          wireframes.
+        </p> */}
+      </div>
 
       <div className="flex flex-col gap-3 mt-5 md:mt-5 lg:mt-5">
         <div className=" flex items-center justify-center  ">
-          <ul className=" flex gap-3 md:gap-7 lg:gap-7   text-textWhite text-xs md:text-lg lg:text-base font-montserrat font-normal cursor-pointer ">
+          <ul className=" flex gap-3 md:gap-7 lg:gap-7 text-textWhite text-sm md:text-base lg:text-base font-montserrat font-normal cursor-pointer ">
             {list.map((item) => (
               <PortfolioList
                 key={item.id}
@@ -73,7 +74,7 @@ const Portfolio: React.FC = () => {
           </ul>
         </div>
 
-        <div className="w-full h-auto gap-3 md:gap-7 lg:gap-5 flex flex-wrap justify-center md:justify-between mt-3 md:mt-12 lg:mt-0 lg:justify-between rounded-lg">
+        <div className="w-full h-auto gap-3 md:gap-7 lg:gap-5 flex flex-wrap justify-center md:justify-center mt-3 md:mt-12 lg:mt-0 lg:justify-center rounded-lg">
           {data.map((d, index) => (
             <a
               href={d?.link}
@@ -85,11 +86,13 @@ const Portfolio: React.FC = () => {
               <img
                 src={d.img}
                 alt=""
-                className="w-full h-full object-cover z-10 hover:opacity-[0.2] rounded-lg"
+                className="w-full h-full object-cover z-10 hover:opacity-[0.09] rounded-lg"
               />
-              <h3 className="absolute font-montserrat font-normal text-base lg:text-2xl text-textWhite ">
-                {d.title}
-              </h3>
+              <div className="absolute border border-red-600 ">
+                <h3 className="font-montserrat font-normal text-base lg:text-xl text-green-800 ">
+                  {d.title}
+                </h3>
+              </div>
             </a>
           ))}
         </div>

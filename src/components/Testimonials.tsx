@@ -14,9 +14,8 @@ const Testimonials = () => {
   const testimonialsData: TestimonialsDataProps[] = [
     {
       id: 1,
-
       name: "Sarah Daniel",
-      title: "Product Designer",
+      title: "CEO of Dsarah Daniels",
       img: require("../assets/sarahDaniels.png"),
       desc: "Ojotule built my business website and since then I have gotten more online presence. I can easily send people a link to my website to get full details about my business, and pictures of my products. Smooth and beautiful website.",
     },
@@ -31,7 +30,7 @@ const Testimonials = () => {
     {
       id: 3,
       name: "Ojochoko Mary Ochuma",
-      title: "CEO of Dsarah Daniels",
+      title: "Product Designer",
       img: require("../assets/ojochoko.jpeg"),
       desc: "Working with Ojotule is incredibly efficient and seamless",
     },

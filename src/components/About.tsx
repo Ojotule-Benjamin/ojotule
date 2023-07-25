@@ -5,12 +5,12 @@ import atule from "../../src/assets/atule.jpg";
 const About = () => {
   return (
     <div
-      className="bg-secondaryColorBg w-full lg:px-24 flex"
+      className="bg-secondaryColorBg w-full lg:px-8 flex overflow-hidden"
       id="about"
       style={{ height: "calc(100vh - 80px)" }}
     >
-      <div className="flex flex-col-reverse w-full lg:flex-row lg:flex lg:items-center lg:justify-center my-0 md:m-auto lg:my-10">
-        <div className="left gap-5 md:gap-5 lg:gap-7 flex flex-col flex-[0.5] items-center lg:items-start lg:justify-start px-3 md:px-11 mt-5 md:mt-0 lg:mt-0 md:py-5 lg:p-0">
+      <div className="flex flex-col w-full h-full lg:flex-row lg:flex items-center justify-center m-auto lg:my-10">
+        <div className="left w-full lg:w-3/5 gap-2 md:gap-5 lg:gap-7 flex flex-col items-center lg:items-start lg:justify-start px-3 md:px-11 md:py-5 lg:p-0">
           <Typewriter
             options={{
               strings: [
@@ -27,40 +27,36 @@ const About = () => {
               cursorClassName: "text-primaryColor text-lg",
             }}
           />
-          <div className="flex gap-3 lg:gap-2 text-white font-montserrat font-normal text-xs md:text-xl lg:text-base">
+          <div className="hidden md:flex gap-2 lg:gap-2 text-white font-montserrat font-bold text-sm md:text-xl lg:text-base">
             <h4>Software Engineer</h4>
-            <span>|</span>
+            <span className=" hidden md:flex">|</span>
             <h4>Mobile Developer</h4>
-            <span>|</span>
+            <span className=" hidden md:flex">|</span>
             <h4>Technical Writer</h4>
           </div>
-          <p className="text-textColor font-montserrat font-normal text-xs md:text-base lg:text-base text-justify">
-            Hello there! I'm not your average software engineer—I'm a
-            code-whisperer, a bug-buster, and a problem-solving guru. Armed with
-            my keyboard and a cup of coffee that rivals the world's greatest
-            inventions, I dive headfirst into the realm of ones and zeros,
-            crafting elegant solutions to digital conundrums. With a dash of
-            creativity, a sprinkle of innovation, and a pinch of
-            caffeine-induced brilliance, I strive to turn complex ideas into
-            functional reality. So, fasten your seatbelt and get ready to embark
-            on a coding adventure like no other, where bugs fear me, algorithms
-            bow to my logic, and lines of code dance to my command. Welcome to
-            the realm of my digital wizardry! 😊
+          <p className="text-textColor font-montserrat font-normal text-sm pr-0 lg:pr-20 md:text-base lg:text-base text-justify">
+            Software Developer in web and mobile application development, adept
+            in Agile methodology, data analysis, automation, testing, and
+            research. Possess a proven track record of delivering highly
+            performant, scalable, and accessible applications that meet business
+            needs. Passionate about technology and continuously learning with
+            excellent communication skills.
           </p>
 
           <a
             href="#portfolio"
-            className="text-textWhite font-montserrat font-normal text-sm  bg-primaryColor w-56 h-12 mb-2 rounded-lg flex items-center justify-center cursor-pointer"
+            className="text-textWhite font-montserrat font-medium text-sm bg-primaryColor w-40 h-10 md:w-56 md:h-12 mb-5 rounded-lg flex items-center justify-center hover:opacity-70 cursor-pointer"
           >
             Explore my work
           </a>
         </div>
 
-        <div className="right  flex-[0.5] flex items-center justify-center md:py-20 md:overflow-hidden lg:py-0 ">
+        <div className="right w-full lg:w-2/5 flex items-center justify-center lg:py-0 ">
           <img
-            src={atule}
+            //src={atule}
+            src={require("../assets/profile.png")}
             alt=""
-            className="w-[250px] h-[250px] md:w-[500px] md:h-[500px] lg:w-[500px] lg:h-[500px] rounded-full  object-cover border-4 border-red-400"
+            className="w-full h-[250px] md:w-[600px] md:h-full lg:w-[500px] lg:h-[500px] rounded-sm object-contain "
           />
         </div>
       </div>
