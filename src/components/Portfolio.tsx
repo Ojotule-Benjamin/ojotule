@@ -73,7 +73,7 @@ const Portfolio: React.FC = () => {
               href={d?.link}
               target="_blank"
               rel="noreferrer"
-              className="item w-[180px] h-[150px]  md:w-[300px] md:h-[200px] lg:w-[320px] lg:h-[200px] rounded-3xl flex items-center justify-center text-white border border-gray-400 relative cursor-pointer  hover:bg-primaryColor"
+              className="item w-full h-[180px]  md:w-[300px] md:h-[200px] lg:w-[320px] lg:h-[200px] rounded-3xl flex items-center justify-center text-white border border-gray-400 relative cursor-pointer  hover:bg-primaryColor"
               key={index}
             >
               <img
@@ -81,11 +81,11 @@ const Portfolio: React.FC = () => {
                 alt=""
                 className="w-full h-full object-cover z-10 hover:opacity-0 rounded-lg"
               />
-              <div className="absolute left-0 right-0 transform p-3">
+              <div className="absolute left-0 right-0 transform p-2">
                 <h3 className="font-montserrat font-bold text-base lg:text-xl text-green-800 text-center">
                   {d.title}
                 </h3>
-                <p className=" font-montserrat font-normal text-[10px] text-textWhite">
+                <p className=" font-montserrat font-normal text-[7px] lg:text-[10px] text-textWhite">
                   {d?.desc}
                 </p>
               </div>

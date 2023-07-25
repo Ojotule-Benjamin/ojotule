@@ -10,12 +10,6 @@ export const featuredPortfolio = [
     img: require("./assets/dsarahdaniels.png"),
     link: "https://dsarah-daniels.vercel.app",
   },
-  {
-    id: 3,
-    title: "Ecocyntec",
-    img: require("./assets/ecocyntec.png"),
-    link: "https://ecocyntec.vercel.app",
-  },
 ];
 
 export const webPortfolio = [
