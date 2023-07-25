@@ -87,14 +87,14 @@ const Contact: React.FC<ContactProps> = () => {
             >
               Twitter
             </a>
-            <a
+            {/* <a
               href="https://www.behance.net/ochumaojochoko"
               target={"_blank"}
               rel="noreferrer"
               className="text-textWhite hover:text-primaryColor  font-montserrat font-normal text-xs md:text-base"
             >
               Blog
-            </a>
+            </a> */}
             <a
               href="https://www.linkedin.com/in/ojotule-benjamin-ajodo-70a99773?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BwfSF2aKFT72b44q0kdH5kg%3D%3D"
               target={"_blank"}
