@@ -22,24 +22,22 @@ const Contact: React.FC<ContactProps> = () => {
     console.log(message);
   };
 
-  console.log(name, email, message);
-
   return (
     <div
-      className="bg-secondaryColorBg flex flex-col  gap-3 md:gap-5 lg:gap-7 px-3 md:px-11 lg:px-24 relative"
+      className="bg-secondaryColorBg flex flex-col gap-10 px-3 md:px-11 lg:px-8 relative"
       id="contact"
       style={{ height: "calc(100vh - 80px)" }}
     >
-      <h1 className="flex font-montserrat font-bold  text-textWhite text-xl md:text-3xl lg:text-4xl">
-        Get In
-        <span className="text-primaryColor pl-2 overflow-hidden font-montserrat font-bold text-xl md:text-3xl lg:text-4xl ">
-          Touch
-        </span>
-      </h1>
+      <div>
+        <h1 className="flex font-montserrat font-semibold text-textWhite text-lg lg:text-3xl ">
+          {" "}
+          Get In <span className=" pl-2 text-primaryColor">Touch</span>
+        </h1>
+      </div>
       <form
         onSubmit={handleSubmit}
-        className="flex items-start justify-center gap-7 flex-col w-full "
-        style={{ height: "calc(100vh - 250px)" }}
+        className="w-full lg:w-1/2 flex items-start justify-center gap-7 flex-col "
+        //style={{ height: "calc(100vh - 250px)" }}
       >
         <input
           className="w-full h-16 bg-secondaryColor outline-none text-textWhite pl-5 lg:pl-10"
@@ -67,20 +65,17 @@ const Contact: React.FC<ContactProps> = () => {
 
         <button
           type="submit"
-          className="w-[100px] h-[50px] lg:w-[200px] lg:h-[50px] mt-3 rounded-xl border-0 text-xs lg:text-base text-textWhite font-montserrat font-medium cursor-pointer bg-primaryColor"
+          className="w-40 h-10 md:w-56 md:h-12 mt-3 rounded-xl border-0 text-xs lg:text-base text-textWhite font-montserrat font-medium cursor-pointer bg-primaryColor"
         >
           Send Message
         </button>
       </form>
 
       <footer className="w-full h-20 flex items-center justify-center absolute left-0 right-0 bottom-0 bg-secondaryColor">
-        <div className="w-full flex items-center justify-between px-3 md:px-11 lg:px-24">
+        <div className="w-full flex items-center justify-between px-3 md:px-11 lg:px-8">
           <div className="left flex items-center justify-center ">
             <p className="text-textWhite font-montserrat font-normal text-[8px] md:text-base lg:text-base">
               &copy; {currentYear} All rights reserved.
-              {/* <span className="text-primaryColor font-montserrat pl-2 font-normal text-sm md:text-base">
-                Ojochoko
-              </span>  */}
             </p>
           </div>
           <div className="right flex items-center justify-center gap-3 md:gap-5 font-montserrat font-normal text-sm md:text-base ">
@@ -88,7 +83,7 @@ const Contact: React.FC<ContactProps> = () => {
               href="https://twitter.com/Rockefellerjr1"
               target={"_blank"}
               rel="noreferrer"
-              className="text-textWhite hover:text-primaryColor  font-montserrat font-normal text-xs md:text-base"
+              className="text-textWhite hover:text-primaryColor font-montserrat font-normal text-xs md:text-base"
             >
               Twitter
             </a>
