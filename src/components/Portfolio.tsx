@@ -44,7 +44,7 @@ const Portfolio: React.FC = () => {
       id="portfolio"
       style={{ height: "calc(100vh - 80px)" }}
     >
-      <div className="border border-red-700">
+      <div className="">
         <h1 className="flex font-montserrat font-semibold text-textWhite text-lg lg:text-3xl ">
           {" "}
           Check Out My{" "}

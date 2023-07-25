@@ -43,7 +43,7 @@ const Services: React.FC = () => {
 
   return (
     <div
-      className="bg-secondaryColorBg flex justify-between pb-5 flex-col px-3 md:px-11 lg:px-8"
+      className="bg-secondaryColorBg flex gap-10 pb-5 flex-col px-3 md:px-11 lg:px-8"
       id="services"
       style={{ height: "calc(100vh - 80px)" }}
     >

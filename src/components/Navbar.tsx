@@ -41,7 +41,7 @@ const Navbar: React.FC<NavbarProps> = ({
   };
 
   return (
-    <div className="fixed w-full top-0 z-10 h-20 px-3 md:px-11 lg:px-8 flex items-center justify-between bg-secondaryColorBg border-4 border-green-500">
+    <div className="fixed w-full top-0 z-10 h-20 px-3 md:px-11 lg:px-8 flex items-center justify-between bg-secondaryColorBg ">
       <h1 className="text-textWhite font-montserrat font-bold text-xl md:text-3xl lg:text-3xl leading-9">
         <a
           href="#about"
