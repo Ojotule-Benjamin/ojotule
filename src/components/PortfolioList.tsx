@@ -15,7 +15,7 @@ const PortfolioList = ({
 }: PortfolioListProps) => {
   return (
     <li
-      className="flex items-center justify-center p-3 lg:mb-3 lg:p-2 rounded-full  "
+      className="flex items-center justify-center p-3 lg:mb-3 lg:p-2 rounded-full hover:text-primaryColor "
       style={{
         color: active ? "#fff" : "",
         backgroundColor: active ? "#FF6363" : "#0F0E0E",

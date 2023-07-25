@@ -43,7 +43,7 @@ const Services: React.FC = () => {
 
   return (
     <div
-      className="bg-secondaryColorBg flex gap-10 pb-5 flex-col px-3 md:px-11 lg:px-8"
+      className="bg-secondaryColorBg flex gap-5 flex-col px-3 md:px-11 lg:px-8"
       id="services"
       style={{ height: "calc(100vh - 80px)" }}
     >
@@ -78,7 +78,7 @@ const Services: React.FC = () => {
                 />
               </div>
               <div className="">
-                <h1 className="text-textWhite font-montserrat font-medium text-base pb-5 lg:text-xl">
+                <h1 className="text-textWhite font-montserrat font-medium text-base pb-2 lg:text-xl">
                   {item.title}
                 </h1>
                 <p className="text-textColor font-montserrat font-normal text-sm md:text-base lg:text-base ">
