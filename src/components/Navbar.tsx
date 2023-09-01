@@ -26,7 +26,6 @@ const menuItems: MenuItem[] = [
     href: "https://drive.google.com/file/d/1iUO8V9B42Ey2dBo6mxGctExHR_SpEwOi/view?usp=drive_link",
     isResume: true,
   },
-  { id: "contact", label: "Contact", href: "#contact" },
 ];
 
 const Navbar: React.FC<NavbarProps> = ({
