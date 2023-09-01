@@ -26,6 +26,8 @@ const menuItems: MenuItem[] = [
     href: "https://drive.google.com/file/d/1iUO8V9B42Ey2dBo6mxGctExHR_SpEwOi/view?usp=drive_link",
     isResume: true,
   },
+  { id: "contact", label: "Contact", href: "#contact" },
+  { id: "blog", label: "Blog", href: "http://www.google.com" },
 ];
 
 const Navbar: React.FC<NavbarProps> = ({
@@ -61,7 +63,7 @@ const Navbar: React.FC<NavbarProps> = ({
                 : ""
             }`}
             {...(item.isResume && {
-              target: "_blank",
+              target: "self",
               rel: "noreferrer",
             })}
             onClick={() => handleSelected(item.id)}
