@@ -27,7 +27,7 @@ const menuItems: MenuItem[] = [
     isResume: true,
   },
   { id: "contact", label: "Contact", href: "#contact" },
-  { id: "blog", label: "Blog", href: "http://www.google.com" },
+  // { id: "blog", label: "Blog", href: "http://www.google.com" },
 ];
 
 const Navbar: React.FC<NavbarProps> = ({

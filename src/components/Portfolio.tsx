@@ -40,11 +40,11 @@ const Portfolio: React.FC = () => {
 
   return (
     <div
-      className="bg-secondaryColorBg flex flex-col gap-10 pb-5 px-3 md:px-11 lg:px-8"
+      className="bg-secondaryColorBg flex flex-col gap-10 pb-5 px-3 md:px-11 lg:px-0"
       id="portfolio"
       style={{ height: "calc(100vh - 80px)" }}
     >
-      <div className="">
+      <div className="lg:px-8">
         <h1 className="flex font-montserrat font-semibold text-textWhite text-lg lg:text-3xl ">
           {" "}
           Check Out My{" "}
@@ -53,7 +53,7 @@ const Portfolio: React.FC = () => {
       </div>
 
       <div className="flex flex-col gap-3 ">
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center ">
           <ul className=" flex gap-3 text-textWhite text-sm md:text-base lg:text-base font-montserrat font-normal cursor-pointer ">
             {list.map((item) => (
               <PortfolioList
