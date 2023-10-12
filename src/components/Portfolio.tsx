@@ -40,11 +40,11 @@ const Portfolio: React.FC = () => {
 
   return (
     <div
-      className="bg-secondaryColorBg flex flex-col gap-10 pb-5 px-3 md:px-11 lg:px-0"
+      className="bg-secondaryColorBg flex flex-col gap-10 pb-5 px-3 md:px-11 lg:px-8"
       id="portfolio"
       style={{ height: "calc(100vh - 80px)" }}
     >
-      <div className="lg:px-8">
+      <div className="">
         <h1 className="flex font-montserrat font-semibold text-textWhite text-lg lg:text-3xl ">
           {" "}
           Check Out My{" "}
